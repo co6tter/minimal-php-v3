@@ -35,7 +35,7 @@ function getPdoInstance(): PDO
         );
 
         return $pdo;
-    } catch (Exception $e) {
+    } catch (PDOException $e) {
         echo $e->getMessage() . PHP_EOL;
         exit;
     }
